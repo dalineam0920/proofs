@@ -11,18 +11,3 @@ Solution:
 UPDATE enrollments
 SET year = '2015'
 WHERE id >= 20 AND id <= 100
-
----------------------------------------------------
-
-2. Given the following data definition, write a query that returns the number of students whose first name is John. 
-String comparisons should be case sensitive.
-
-TABLE students
-   id INTEGER PRIMARY KEY,
-   firstName VARCHAR(30) NOT NULL,
-   lastName VARCHAR(30) NOT NULL
-
-Solution:
-SELECT COUNT(*)
-FROM students
-WHERE firstName is "John"
